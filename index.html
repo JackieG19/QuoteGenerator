@@ -3,6 +3,20 @@
     <head>
         <title>Quote</title>
     </head>
+    <style>
+      body {
+        background-image: url("creative.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center; 
+      }
+      
+      .quoteBox {
+        position: static;
+        border: 10px solid #73AD21;
+      }
+      
+    </style>
    
     <body>
             
@@ -12,21 +26,21 @@
       </div>
 
       <div class="quoteText">
-        <p id="diplayText"></p>
+        <p id="diplayText" style="font-size:25px"></p>
       </div> <!--"quote text"-->
       
       <div class="buttons">
         <button class="button" id="newQuotebtn" onclick="newQuote()">New quote</button>
       </div> <!-- button div-->
-  
-   </div><!--"quote box"-->  
    
    <div class="twitter">
       <a href="http://twitter.com/share" target="_blank">
-        <button id="twitter" class="share">Tweet Quote</button>
-        </a>
-      
+        <button id="twitter" class="share" onclick="twitter()">Tweet Quote</button></a>
   </div>
+  
+    <div class="fb-quote"></div>
+  
+  </div><!--"quote box"-->  
         
 <!-- [Quote 1] "Quiet people have the loudest mind."- Stephen King -->
         
