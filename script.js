@@ -14,17 +14,13 @@ function newQuote() {
 var randomQuote = Math.floor(Math.random() * (myQuotes.words.length));
 document.getElementById('diplayText').innerHTML = myQuotes.words[randomQuote];
 
-/*var tweet =
-$(".share").onclick(function(event){
-   'https://twitter.com/intent/tweet?text=' + myQuotes.words[randomQuote] + "";
-     window.open(tweet);
- });*/
-  
-
-  var tweet =
+$(document).ready(function() {
+var tweet =
  $(".share").onclick(function(event){randomQuote(); 
-    'https://twitter.com/intent/tweet?text=' + myQuotes.words[randomQuote] + "";
+    'https://twitter.com/intent/tweet?text=' + myQuotes.words[randomQuote];
      window.open(tweet); 
+    });
      
- });
+});  
 }
+
